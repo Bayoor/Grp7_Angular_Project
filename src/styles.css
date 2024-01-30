@@ -1,1 +1,80 @@
-/* You can add global styles to this file, and also import other style files */
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700);
+
+
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+}
+
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+li {
+  list-style: none;
+}
+
+p, button {
+  font-family: 'Poppins';
+}
+
+@media screen  and (max-width: 600px) {
+  .container {
+    max-width: 1440px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

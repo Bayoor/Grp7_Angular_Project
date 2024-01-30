@@ -1,0 +1,8 @@
+.user-card {
+    display: grid;
+    column-gap: 40px;
+    row-gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 50px;
+    justify-content: space-around;
+}

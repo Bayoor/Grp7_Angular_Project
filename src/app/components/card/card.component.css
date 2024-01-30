@@ -1,0 +1,71 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+   
+}
+
+.card_container {
+
+    width: 450px;
+    height: 300px;
+    box-shadow: 3px 3px 3px 2px rgb(243, 241, 241);
+    border-radius: 8px;
+    outline: 1px solid rgb(211, 205, 205);
+    padding: 1rem;
+    padding-top: 2rem;
+}
+
+.card_details {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+
+}
+
+
+
+.card_details div:nth-child(1) {
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px 2px rgb(243, 241, 241);
+}
+
+.card_details div > img {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.username {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.username,
+.user-email {
+    text-align: start;
+}
+
+.card div button {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 5rem;
+    background: rgb(58, 2, 71);
+    width: 120px;
+    border-radius: 5px;
+    padding: .2rem;
+}
+
+.card div button:hover {
+    transform: skew(10deg);
+    
+}
+
+.card div button a {
+    text-decoration: none;
+    color: #fff;
+}
