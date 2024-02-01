@@ -1,8 +1,7 @@
 # Angular User Data Application
 
 [![Angular](https://img.shields.io/badge/Angular-11.2.0-red)](https://angular.io/)
-[![Bootstrap](https://img.shields.io/badge/Bootstrap-4.6.0-blueviolet)](https://getbootstrap.com/)
-[![Tachyons](https://img.shields.io/badge/Tachyons-4.12.0-green)](http://tachyons.io/)
+[![Tailwind](https://img.shields.io/badge/Tailwind-3.4.1-blueviolet)](https://tailwindcss.com/)
 
 This Angular project is a comprehensive web application with two main components: a personal landing page and a user data page. The landing page serves as a space for personal expression or summarizing learning experiences. On the other hand, the user data page displays a list of users fetched from a RESTful API, emphasizing key Angular concepts such as components, routing, HTTP Client, and effective data handling.
 
