@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Injectable } from '@angular/core';
 
 @Component({
   selector: 'app-spinner',
@@ -7,6 +7,12 @@ import { Component } from '@angular/core';
   templateUrl: './spinner.component.html',
   styleUrl: './spinner.component.css'
 })
+
+@Injectable({
+  providedIn: 'root'
+})
+
 export class SpinnerComponent {
+  
 
 }
