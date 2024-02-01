@@ -4,16 +4,16 @@ import { SearchComponent } from '../../components/search/search.component';
 import { CardComponent } from '../../components/card/card.component';
 import { NgFor } from '@angular/common';
 import {  User } from '../../../data/user.interface';
-import { HttpClient } from '@angular/common/http';
-import { USERS } from '../../../data/user.data';
-// import { USERS } from '../../../data/user.data';
+import { SpinnerComponent } from '../../components/spinner/spinner.component';
+
 
 @Component({
     selector: 'app-users',
     standalone: true,
     templateUrl: './users.component.html',
     styleUrl: './users.component.css',
-    imports: [SearchComponent, CardComponent, NgFor]
+    imports: [SearchComponent, CardComponent, NgFor,SpinnerComponent]
+   
 })
 export class UsersComponent implements OnInit {
   @Input() users : User[] | undefined ;

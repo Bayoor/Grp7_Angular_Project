@@ -2,13 +2,13 @@
   
   <h1 class="h1">Users List</h1>
   
-<app-search [(searchTerm)]="searchTerm" />
-
+<app-search [(searchTerm)]="searchTerm" />  
+  
   <div class="user-card">
     @for (user of filterUsers(); track $index) {
     <app-card [user]="user" />
     } @empty {
-    <h1>No users yet</h1>
+    <app-spinner></app-spinner>
     }
   </div>
 </section>
