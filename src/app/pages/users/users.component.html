@@ -1,14 +1,17 @@
-<section class="container">
+ <section class="container">
   
-  <h1 class="h1">Users List</h1>
-  
+  <h1 class="h1">Users List</h1>  
 <app-search [(searchTerm)]="searchTerm" />  
   
   <div class="user-card">
+    <app-spinner *ngIf="isLoading"></app-spinner>
     @for (user of filterUsers(); track $index) {
     <app-card [user]="user" />
     } @empty {
-    <app-spinner></app-spinner>
+   <p>No user found</p>
     }
   </div>
-</section>
+</section> 
+
+
+
