@@ -5,6 +5,7 @@ import { CardComponent } from '../../components/card/card.component';
 import { NgFor } from '@angular/common';
 import {  User } from '../../../data/user.interface';
 import { FilterComponent } from "../../components/filter/filter.component";
+import { SpinnerComponent } from '../../components/spinner/spinner.component';
 
 
 @Component({
@@ -12,7 +13,7 @@ import { FilterComponent } from "../../components/filter/filter.component";
     standalone: true,
     templateUrl: './users.component.html',
     styleUrl: './users.component.css',
-    imports: [ CardComponent, NgFor, FilterComponent]
+    imports: [ CardComponent, NgFor, FilterComponent, SpinnerComponent]
 })
 export class UsersComponent {
   @Input() users : User[] | undefined ;

@@ -10,7 +10,7 @@
     @for (user of users; track $index) {
     <app-card [user]="user" />
     } @empty {
-    <h1>No users yet</h1>
+    <app-spinner></app-spinner>
     }
   </div>
 </section>
