@@ -1,10 +1,13 @@
-import { UserService } from './../../service/user-service.service';
 import { Component, Input } from '@angular/core';
-import { SearchComponent } from '../../components/search/search.component';
+
 import { CardComponent } from '../../components/card/card.component';
-import { NgFor } from '@angular/common';
-import {  User } from '../../../data/user.interface';
 import { FilterComponent } from "../../components/filter/filter.component";
+import { NgFor } from '@angular/common';
+import { User } from '../../../data/user.interface';
+import { UserService } from './../../service/user-service.service';
+
+// import { SearchComponent } from '../../components/search/search.component';
+
 
 
 @Component({
@@ -12,7 +15,7 @@ import { FilterComponent } from "../../components/filter/filter.component";
     standalone: true,
     templateUrl: './users.component.html',
     styleUrl: './users.component.css',
-    imports: [SearchComponent, CardComponent, NgFor, FilterComponent]
+    imports: [CardComponent, NgFor, FilterComponent]
 })
 export class UsersComponent {
   @Input() users : User[] | undefined ;
