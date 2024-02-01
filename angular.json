@@ -71,6 +71,7 @@
             "buildTarget": "user_data_app:build"
           }
         },
+        
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {

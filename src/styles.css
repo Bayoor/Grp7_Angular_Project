@@ -2,6 +2,9 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700);
 
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 *,
 *::after,
@@ -14,7 +17,14 @@
 
 body {
   font-family: Poppins, sans-serif;
+  background-color: rgb(252, 251, 251);
 }
+
+/* p,
+span {
+  color:rgb(19, 17, 17);
+
+} */
 
 
 .container {
@@ -23,6 +33,10 @@ body {
   text-align: center;
   margin: 0 auto;
   padding: 0 2rem;
+}
+
+a {
+  text-decoration: none;
 }
 
 li {

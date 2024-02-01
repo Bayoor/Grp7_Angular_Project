@@ -1,6 +1,11 @@
 <section class="container">
   <h1>Users list</h1>
-  <app-search />
+  <div
+  class="search-user">
+
+    <app-search />
+    <app-filter />
+  </div>
   <div class="user-card">
     @for (user of users; track $index) {
     <app-card [user]="user" />
