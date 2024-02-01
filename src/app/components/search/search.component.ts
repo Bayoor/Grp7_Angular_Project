@@ -17,7 +17,7 @@ export class SearchComponent  {
   @Input({required: true})
   search!: string;
   @Output()
-  searchChange:EventEmitter<Search>  = new EventEmitter();
+  searchChange:EventEmitter<Search> = new EventEmitter();
 
 
   handleChange(value: string) {
