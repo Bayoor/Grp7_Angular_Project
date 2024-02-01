@@ -1,50 +1,52 @@
+/* Common styles for card */
 .card {
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
-   
+    margin: 10px;
+    padding: 15px;
+    /* border: 1px solid #ddd; */
 }
 
-.card_container {
-
-    width: 450px;
-    height: 300px;
-    box-shadow: 3px 3px 3px 2px rgb(243, 241, 241);
+.card-container {
+    /* width: 450px; */
+    width: 115%;
+    max-height: 300px;
+    box-shadow: 1px 1px 10px 4px rgb(243, 241, 241);
     border-radius: 8px;
-    outline: 1px solid rgb(211, 205, 205);
-    padding: 1rem;
-    padding-top: 2rem;
-}
-
-.card_details {
-    display: flex;
-    align-items: center;
-    gap: .8rem;
-
+    padding: 2rem;
+    /* padding-top: 2rem; */
 }
 
 
 
-.card_details div:nth-child(1) {
+.card-details div:nth-child(1) {
     border-radius: 50%;
-    box-shadow: 3px 3px 3px 2px rgb(243, 241, 241);
+    box-shadow: 1px 1px 1px 10px rgb(243, 241, 241);
+    width: 100px;
+    height: 100px;
+   
+    
+
 }
 
-.card_details div > img {
+.card-details div > img {
     width: 100px;
     height: 100px;
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
+    border-radius: 50%;
 }
 
 .username {
     font-size: 1.5rem;
     font-weight: 600;
+    text-align: start;
+    white-space: nowrap;
 }
 
-.username,
 .user-email {
     text-align: start;
 }
@@ -52,20 +54,49 @@
 .card div button {
     display: flex;
     justify-content: center;
-    align-items: center; 
-    margin-top: 5rem;
+    align-items: center;
+    margin-top: 2rem;
     background: rgb(58, 2, 71);
     width: 120px;
     border-radius: 5px;
-    padding: .2rem;
+    padding: 0.2rem;
 }
 
 .card div button:hover {
     transform: skew(10deg);
-    
 }
 
 .card div button a {
     text-decoration: none;
     color: #fff;
+}
+
+/* Media queries for responsiveness */
+/*  */
+
+
+@media (320px <= width <= 600px ) {
+    .card-container {
+        width: 300px;
+        max-height: 300px;
+        box-shadow: 1px 1px 10px 4px rgb(243, 241, 241);
+        border-radius: 8px;
+        padding: 2rem;
+       
+    }
+
+    .card-details div:nth-child(1) {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        box-shadow: 1px 1px 1px 10px rgb(243, 241, 241) ;
+        margin-bottom: 1.5rem;
+    }
+
+    .username {
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-align: start;
+        
+    }
 }

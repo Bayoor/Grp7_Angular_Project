@@ -16,10 +16,30 @@ h1 {
     color: rgb(146, 139, 139);
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a.active {
+    color: purple
+}
+
+
+
+
+
 nav {
     display: flex;
+    
+}
+
+
+nav ul {
+    display: flex;
     gap: 1.5rem;
-
-
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
 }
 

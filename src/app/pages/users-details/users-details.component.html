@@ -1,0 +1,110 @@
+<section class="w-full overflow-hidden background_color">
+  <div
+    class="background_image md:w-full md:h-[30vh] lg:h-[40vh] xl:h-[35vh]"
+  ></div>
+  <div class="md:flex max-w-[2000px]">
+    <div class="w-full md:border-r-[1px] border-slate-200 md:basis-[45%]">
+      <div
+        class="mb-5 text-center md:p-5 md:relative md:translate-y-[-160px] md:z-10 md:h-[200px] lg:translate-y-[-190px]"
+      >
+        
+        <div
+          class="w-[100px] h-[100px] mx-auto mt-10 md:w-[150px] md:h-[150px] md:mb-4 lg:w-[200px] lg:h-[200px]"
+        >
+          <img
+            src="https://robohash.org/{{ user.name }}?size=500x500&set=set3"
+            alt="userimage"
+            class="w-full h-full rounded-full md:border-8 md:border-white"
+          />
+        </div>
+        
+        <h2 class="font-bold text-lg font-sans md:text-3xl md:mb-2">
+          {{ user.name }}
+        </h2>
+        <p >
+          {{ user.address.street }}, {{ user.address.city }}
+        </p>
+        <span class="italic text-[.9rem] text-button md:text-md">
+           {{ user.website }}</span
+        >
+      </div>
+ 
+      <div
+        class="w-full text-start p-5 border-t-[1px] border-slate-200 lg:px-20"
+      >
+        <h3
+          class="font-bold text-button text-md font-mono mb-3 md:text-lg lg:text-2xl"
+        >
+          Company
+        </h3>
+        <div class="w-full flex mb-5">
+          <div
+            class="basis-[30%] mr-3 xsmx:basis-[20%] md:basis-[25%] lg:basis=[5%]"
+          >
+            <img
+              src="https://robohash.org/{{ user.name }}?size=500x500&set=set3"
+              alt="companylogo"
+              class="rounded-lg w-[100%] max-w-[130px] max-h-[130px]"
+            />
+          </div>
+          <div class="basis-[70%] lg:basis-[90%]">
+            <h4 class="text-sm text-button xsmx:font-bold lg:text-lg lg:mb-1">
+              {{ user.company.name }}
+            </h4>
+            <p class="text-[.7rem] mb-2 xsmx:text-sm xsmx:font-thin lg:text-lg">
+              Senior Software Engineer
+            </p>
+            <span class="text-[.7rem] lg:text-sm"
+              >July 2020 - Present</span
+            >
+          </div>
+        </div>
+        <div class="w-full">
+          <h5 class="text-sm font-bold mb-2 italic md:text-lg">
+            About Company
+          </h5>
+          <p>
+            {{ user.company.bs }},{{ user.company.catchPhrase }}
+          </p>
+        </div>
+      </div>
+    </div>
+    <section class="md:basis-[45%]">
+    
+      <div class="p-5">
+        <h5 class="text-sm font-serif font-bold mb-2 text-button md:text-lg">
+          About
+        </h5>
+        <p>
+          {{ user.name }} lives at {{ user.address.suite }},{{
+            user.address.street
+          }},{{ user.address.city }}, and works at
+          {{ user.company.name }} where he produce {{ user.company.bs }},{{
+            user.company.catchPhrase
+          }}
+        </p>
+      </div>
+      <!-- contact section -->
+      <div class="p-5 text-sm">
+        <h5 class="font-serif font-bold mb-2 text-button md:text-lg">
+          Contact info
+        </h5>
+        <p
+          class="text-[.7rem] mb-2  "
+        >
+          {{ user.address.suite }},{{ user.address.street }},{{
+            user.address.city
+          }}, <span>zipcode: {{ user.address.zipcode }}</span>
+        </p>
+        <a
+          href="mailto:{{ user.email }}"
+          type="email"
+          class="block text-sm decoration-none"
+          >{{ user.email }}</a
+        >
+        <span class="text-sm">{{ user.phone }}</span>
+      </div>
+    </section>
+  </div>
+
+</section>

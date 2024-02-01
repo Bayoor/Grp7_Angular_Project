@@ -1,21 +1,19 @@
 <section class="card">
-  <div class="card_container">
-    <div class="card_details">
+  <div class="card-container">
+    <div class="card-details">
       <div>
-        <img
-          src="https://robohash.org/{{ user?.name }}?size=500x500&set=set3"
-        />
+        <img src="https://robohash.org/{{ user.name }}?size=500x500&set=set3" alt="{{ user.name }} Avatar" />
       </div>
 
       <div>
-        <p class="username">{{ user?.name }}</p>
-        <p class="user-email">{{ user?.email }}</p>
+        <p class="username">{{ user.name }}</p>
+        <p class="user-email">{{ user.email }}</p>
       </div>
     </div>
 
     <div>
       <button>
-        <a [routerLink]="['/user', user?.id]">View Details</a>
+        <a [routerLink]="['/user', user.id]">View Details</a>
       </button>
     </div>
   </div>
