@@ -15,6 +15,7 @@ const httpOptions  ={
   providedIn: 'root'
 })
 export class UserService {
+  [x: string]: any;
 
  users :User[] = [];
 

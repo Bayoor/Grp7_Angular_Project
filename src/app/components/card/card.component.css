@@ -16,7 +16,14 @@
     box-shadow: 1px 1px 10px 4px rgb(243, 241, 241);
     border-radius: 8px;
     padding: 2rem;
+    transition: transform 0.3s ease;
     /* padding-top: 2rem; */
+}
+
+
+.card-container:hover {
+    transform:scale(1.1);
+    /* background-color: red; */
 }
 
 
@@ -98,5 +105,14 @@
         font-weight: 700;
         text-align: start;
         
+    }
+}
+
+
+@media(768px <= width <= 1200px) {
+    .card-container {
+      
+        width: 100%;
+       
     }
 }
