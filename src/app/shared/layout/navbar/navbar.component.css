@@ -1,0 +1,45 @@
+.navbar {
+    /* border-bottom: 1px solid rgb(209, 202, 202); */
+    box-shadow: 2px 2px 5px rgb(209, 202, 202);
+    padding-block: .5rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: rgb(146, 139, 139);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a.active {
+    color: purple
+}
+
+
+
+
+
+nav {
+    display: flex;
+    
+}
+
+
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+}
+

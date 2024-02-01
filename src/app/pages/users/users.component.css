@@ -1,0 +1,35 @@
+.user-card {
+  display: grid;
+  column-gap: 40px;
+  /* row-gap: 2px; */
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 50px;
+  justify-content: space-around;
+}
+
+.h1 {
+  margin-top: 2rem;
+  margin-bottom: .3rem;
+  text-align: start;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.search-user {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+@media (768px <= width <= 1300px) {
+  .user-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (320px <= width <= 600px) {
+  .user-card {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 50px;
+  }
+}
